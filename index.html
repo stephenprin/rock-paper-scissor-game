@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,600&display=swap" rel="stylesheet">
+<script src="js/index.js" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="score-board">
+            <div class="title">
+                <img src="assets/title.png">
+            </div>
+            <div class="score">
+                <p>Score</p>
+                <h1>0</h1>
+
+            </div>
+        </div>
+
+            <div class="hands">
+                <div class=" hand paper" onclick="userPicked('paper')">
+                    <img src="assets/Paper.png">
+                </div>
+                <div class=" hand scissor" onclick="userPicked('scissor')">
+                    <img src="assets/Scissors.png">
+                </div>
+                <div class=" hand rock" onclick="userPicked('rock')">
+                    <img src="assets/Rock.png">
+                </div>
+
+            </div>
+
+            <div class="compare">
+                <div class="userChoice">
+                    <h1>YOU PICKED</h1>
+                    <div class="imageContainer">
+                        <img id="userPickedOption" src="assets/Paper.png">
+                    </div>
+                </div>
+                <div class="result">
+                    <h1>YOU WIN</h1>
+                    <div class="btn" onclick="rePlay()">PLAY AGAIN</div>
+                    <div class="restart" onclick="reStart()">RESTART</div>
+                   
+
+                </div>
+                <div class="computerChoice">
+                    <h1>COMPUTER PICKED</h1>
+                    <div class="imageContainer">
+                        <img id="computerPickedOption" src="assets/Rock.png">
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    
+</body>
+</html>

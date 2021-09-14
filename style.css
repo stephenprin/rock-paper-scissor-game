@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow', sans-serif;
+}
+#wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(134.4% 134.4% at 50% 0,
+    #0a0a07 0%,
+    #050502 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-board{
+    width: 700px;
+    height: 150px;
+    border: 2px solid white;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+.title{
+    margin-left: 20px;
+}
+.score{
+    width: 140px;
+    height: 110px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.score h1{
+    color:#1f3757;
+    font-size: 40px;
+}
+.score p{
+    color: #3d80d8;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.hands{
+    background-image: url("assets/triangle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 476px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+.paper{
+    margin-right: 20px;
+}
+.scissor{
+    margin-left: 20px;
+}
+.hands .hand{
+    cursor: pointer;
+    transition: all 0.24s;
+}
+.hands .hand:hover{
+    transform: translate3d(0px,-7px, 0px);
+}
+
+.compare{
+    width: 900px;
+    display: none;
+    margin-top: 60px;
+}
+.compare h1{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.compare > div{
+    flex: 1;
+}
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.imageContainer img{
+    width: 250px;
+    height: 250px;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.result h1{
+    font-size: 40px;
+}
+.result .btn{
+    padding: 12px 24px;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 20px;
+    color:#1f3757;
+    cursor: pointer;
+    transition: all 0.25s;
+
+}
+.result .btn:hover{
+    background-color: rgb(229, 226, 226);
+    transform: translate3d(0px, 2px, 0px );
+}
+.restart{
+    padding: 12px;
+    margin-top: 20px;
+    background-color: rgb(95, 48, 4);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
